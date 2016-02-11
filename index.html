@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Matmigo - El amigo de los números y las Matemáticas</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/index.css">
+	<script type="text/javascript" src="./js/prefixfree.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Matmigo - El mejor amigo de las Matemáticas y los números.</h1>
+		<h2><span id="saludo">Hola Amigo! </span>Ayuda a Matmigo a resolver las sumas y restas, sólo puedes fallar 3 veces.</h2>
+	</header>
+	<audio controls autoplay loop preload="auto" volumen="50%">
+		<source src="./sounds/fondo.acc" type="audio/acc">
+   		<source src="./sounds/fondo.ogg" type="audio/ogg">
+   		<source src="./sounds/fondo.mp3" type="audio/mpeg">
+ 		Your browser does not support the audio element.
+	</audio>
+	<article id="artintentos">
+		<span><strong>Intentos:</strong></span>
+		<span><strong id="intento1">O</strong></span>
+		<span><strong id="intento2">O</strong></span>
+		<span><strong id="intento3">O</strong></span>
+	</article>
+	<section>
+		<article>
+			<figure id="fondo"><img src="./images/fondo.jpg" alt="fondo"></figure>
+		</article>
+		<article>
+			<figure class="cuadro" id="espacio1"><img src="" alt=""><figcaption>Operador1</figcaption></figure>
+			<figure class="cuadro" id="signo"><img src="" alt=""><figcaption>Signo</figcaption></figure>
+			<figure class="cuadro" id="espacio2"><img src="" alt=""><figcaption>Operador2</figcaption></figure>
+			<figure class="cuadro" id="igual"><img src="./images/igual.png" alt="igual"><figcaption>Igual</figcaption></figure>
+			<figure class="cuadro" id="resultado1"><img ondrop="drop(event)" ondragover="allowDrop(event)" src="" alt=""><figcaption>Resultado1</figcaption></figure>
+			<figure class="cuadro" id="resultado2"><img ondrop="drop(event)" ondragover="allowDrop(event)" src="" alt=""><figcaption>Resultado2</figcaption></figure>
+			<br/>
+			<br/>
+			<figure class="figura" id="figura1"><img src="" alt=""></figure>
+			<figure class="cuadro" style="visibility: hidden;"></figure>
+			<figure class="figura" id="figura2"><img src="" alt=""></figure>
+			<figure class="cuadro" style="visibility: hidden;"></figure>
+			<figure class="cuadro" style="visibility: hidden;"></figure>
+			<figure class="cuadro" style="visibility: hidden;"></figure>
+			<a href="#" id="btnDesc">Descubrir</a>
+		</article>
+	</section>
+	<section>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/0.png" alt="0"><figcaption>Cero</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/1.png" alt="1"><figcaption>Uno</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/2.png" alt="2"><figcaption>Dos</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/3.png" alt="3"><figcaption>Tres</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/4.png" alt="4"><figcaption>Cuatro</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/5.png" alt="5"><figcaption>Cinco</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/6.png" alt="6"><figcaption>Seis</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/7.png" alt="7"><figcaption>Siete</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/8.png" alt="8"><figcaption>Ocho</figcaption></figure>
+		<figure class="numero"><img draggable="true" ondragstart="drag(event)" src="./images/9.png" alt="9"><figcaption>Nueve</figcaption></figure>
+	</section>
+	<img id="acierto" src="./images/acierto.jpg" width="600" height="600" style="display:none" />
+	<img id="error" src="./images/error.jpg" width="600" height="600" style="display:none" />
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="./js/ion.sound.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
